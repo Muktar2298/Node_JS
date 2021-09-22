@@ -1,11 +1,13 @@
 const fs = require("fs");
 
+
 // --Asynchronous fs methodes --//
 //1.readFile()
 fs.readFile("myfile.txt", (err, data) => {
   if (err) throw err;
   console.log(data.toString());
 });
+
 
 /* // --synchronous fs methods --//
 // 1.writeFileSync()
